@@ -1,0 +1,10 @@
+uvicorn
+starlette
+pathlib
+aiohttp
+aiofiles
+asyncio
+gunicorn
+python-multipart
+jinja2
+b2sdk

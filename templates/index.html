@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Accent Recognition - Voice Sample Collection{% endblock %}
+{% block content %}
+		<main role="main" class="flex-fill">
+			<div class="container">
+				<h1 class="mt-5">{{ self.title() }}</h1>
+				<h2 class="mt4">What is this?</h2>
+				<p>This is an experimental project to attempt to determine the accent of an English speaker, native or non-native, based on a trained machine learning model.</p>
+				<p>We kindly ask for your co-operation to freely provide a sample of your voice reading a preset sentence, and letting us know the following information:</p>
+				<ul>
+					<li>First/Strongest native language</li>
+					<li>The country of your primary upbringing</li>
+				</ul>
+				<p>This information will be used to help classify your voice sample and used to train our recognition model. It will NOT be used for any other purpose.</p>
+				<p>A unique identifier for your submission will be generated, and you can use this if you wish to have your voice recording deleted at a later date. Please keep this identifier safe.</p>
+				<p>Due to the nature of machine learning, it is not possible to retroactively undo the influence of your sample in the learning of the model without simply starting the learning of the algorithm from scratch, so while you may request to have your voice sample deleted at a later date, we cannot undo influences it has already made in our model, but any future training of our model will no longer incorporate your voice sample.</p>
+				<h2 class="mt4">Got it, what next?</h2>
+				<p>On the next page, your browser will ask you for permission to your microphone, please allow it, select your microphone, fill out the information regarding your language and country, click record and read out loud the sample sentence displayed on the page, then finally if you're happy with the recording, click the submit button.</p>
+				<p>Continuing to the next page consistutes your acknowledgement and agreement to the use of your provided data above.</p>
+				<button onclick="window.location.href = '/record';" class="btn btn-primary btn-lg btn-block">Next</button>
+			</div>
+		</main>
+{% endblock %}
